@@ -1,0 +1,14 @@
+{
+  "name": "devpings",
+  "version": "0.1.0",
+  "description": "Email for your dev agents, on your own domain.",
+  "type": "module",
+  "bin": { "devpings": "bin/devpings.mjs" },
+  "files": ["bin", "src", "worker"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "vitest run" },
+  "devDependencies": { "vitest": "^3" },
+  "license": "MIT",
+  "homepage": "https://devpings.com",
+  "repository": "github:devpings/devpings"
+}

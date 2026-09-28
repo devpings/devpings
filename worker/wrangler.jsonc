@@ -1,0 +1,14 @@
+{
+  // devpings mail worker — deploy this into YOUR OWN Cloudflare account with the official
+  // Deploy button. The two KV namespaces are declared without ids on purpose: the deploy
+  // flow provisions fresh ones in your account and fills the ids in for you.
+  "name": "devpings-mail",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "kv_namespaces": [
+    // ADDRESSES: permanent minted addresses (no TTL — an account root that expires is not
+    // an account root). STEPS: short-lived setup/claim/step state. Two lifetimes, two stores.
+    { "binding": "ADDRESSES" },
+    { "binding": "STEPS" }
+  ]
+}
